@@ -26,4 +26,8 @@ class AuthenticationProvider {
 		return $this;
 	}
 
+	public function hash($input){
+		return hash('sha512', $this->getSalt().$input);
+	}
+
 }
