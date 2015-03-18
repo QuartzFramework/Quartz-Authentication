@@ -21,7 +21,7 @@
     },
     "autoload": {
         "files": [ "src/authentication.php" ],
-        "psr-0": { "Authentication\\Authentication\\": "" }
+        "psr-0": { "Authentication": "" }
     },
     "extra": {
         "branch-alias": {
