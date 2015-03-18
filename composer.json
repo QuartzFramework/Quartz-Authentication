@@ -20,8 +20,10 @@
         "phpunit/phpunit": "@stable"
     },
     "autoload": {
-        "files": [ "src/authentication.php", "src/AuthenticationProvider.php" ],
-        "psr-0": { "quartz\\Authentication": "" }
+        "psr-4": { 
+        	"quartz\\Authentication": "src/authentication.php",
+        	"quartz\\Authentication\\AuthenticationProvider": "src/authenticationProvider.php",
+        }
     },
     "extra": {
         "branch-alias": {
