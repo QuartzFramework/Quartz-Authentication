@@ -21,7 +21,7 @@
     },
     "autoload": {
         "files": [ "src/authentication.php" ],
-        "psr-0": { "Authentication": "" }
+        "psr-0": { "quartz\\Authentication": "" }
     },
     "extra": {
         "branch-alias": {
