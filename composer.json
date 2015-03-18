@@ -20,9 +20,8 @@
         "phpunit/phpunit": "@stable"
     },
     "autoload": {
-		"psr-0": {
-            "Authentication": "src/"
-        }
+        "files": [ "src/authentication.php" ],
+        "psr-0": { "Authentication\\Authentication\\": "" }
     },
     "extra": {
         "branch-alias": {
