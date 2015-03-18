@@ -20,7 +20,7 @@
         "phpunit/phpunit": "@stable"
     },
     "autoload": {
-        "files": [ "src/authentication.php" ],
+        "files": [ "src/authentication.php", "src/AuthenticationProvider.php" ],
         "psr-0": { "quartz\\Authentication": "" }
     },
     "extra": {
