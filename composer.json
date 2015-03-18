@@ -21,8 +21,7 @@
     },
     "autoload": {
         "psr-4": { 
-        	"quartz\\": "src/",
-        	"quartz\\Authentication\\": "src/AuthenticationProvider.php"
+        	"quartz\\authentication\\": "src/",
         }
     },
     "extra": {
