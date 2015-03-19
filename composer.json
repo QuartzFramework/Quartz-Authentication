@@ -20,13 +20,13 @@
         "phpunit/phpunit": "@stable"
     },
     "autoload": {
-        "psr-4": { 
+        "psr-4": {
         	"quartz\\authentication\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.0.2-dev"
+            "dev-master": "0.0.3-dev"
         }
     }
 }
