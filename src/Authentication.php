@@ -5,11 +5,13 @@
 
 namespace quartz\authentication;
 
+
+
 class Authentication{
 
 
 
-	protected $authType;
+	protected $auth;
 
 	/**
 		Initializea new authentication instance, setup a listener
@@ -17,16 +19,17 @@ class Authentication{
 		@param authentication type
 	**/
 	public function __construct(AuthenticationProvider $authenticationProvider){
-		$this->authType = $authenticationProvider;
+		$this->auth= $authenticationProvider;
+		$this->sessions = new provider\SessionProvider;;
 	}
 
-	public function hash($input){
-		return $this->authType->hash($input);
+	public function provider() {
+		return $this->auth;
 	}
 
-
-	public function validate($input){
-		return $this->authType->validate($input);
+	public function test(){
+		echo $this->sessions->authSession();
 	}
+
 
 }

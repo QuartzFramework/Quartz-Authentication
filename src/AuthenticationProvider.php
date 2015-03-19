@@ -10,7 +10,7 @@ namespace quartz\authentication;
 
 
 
-class AuthenticationProvider {
+class AuthenticationProvider extends Authentication{
 	private $salt;
 
 	public function __construct(){
@@ -29,5 +29,7 @@ class AuthenticationProvider {
 	public function hash($input){
 		return hash('sha512', $this->getSalt().$input);
 	}
+
+
 
 }
