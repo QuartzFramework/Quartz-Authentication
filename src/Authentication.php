@@ -3,7 +3,7 @@
 	Default authenticaton wrapper, this wrapper will be used to call all provider child functions
 **/
 
-namespace quartz;
+namespace quartz\authentication;
 
 class Authentication{
 
